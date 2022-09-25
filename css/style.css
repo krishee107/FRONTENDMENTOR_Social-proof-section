@@ -102,10 +102,20 @@ header article{
     margin: 16px 24px 8px 24px;
     color: white;
 }
+
+.userInfo {
+    display: grid;
+    grid-template-areas:
+        "I N"
+        "I S";
+    align-items: center;
+    grid-template-columns: min-content auto;
+}
 .card img{
     border-radius: 50%;
     width: 50px;
     margin-right: 20px;
+    grid-area: I;
 }
 .card .name{
     font-weight: 700;
